@@ -357,3 +357,128 @@ After the short pause, the apple teleports back to the top at a new random `x` a
 
 <details>
 <summary><b>🧠 Concepts you'll learn</b></summary>
+
+<br/>
+
+| Concept | Where it appears |
+|:--|:--|
+| 🔁 **Loops** | `forever` in both sprites |
+| 🔀 **Conditionals** | `if touching Bowl` |
+| 📦 **Variables** | `score` |
+| 🎲 **Randomness** | `pick random -200 to 200` |
+| 🖱️ **Input handling** | `mouse x` |
+| 🔊 **Audio** | `start sound Chomp` |
+| 🧭 **Coordinates** | Stage X/Y positioning |
+
+</details>
+
+---
+
+## 🚀 Getting Started
+
+### Option 1 — Play online
+1. Open the [Scratch Editor](https://scratch.mit.edu/projects/editor/).
+2. Click **File → Load from your computer**.
+3. Select the `Catch-an-Apple.sb3` file from this repository.
+4. Press the 🏁 **Green Flag** and start catching.
+
+### Option 2 — Build it from scratch
+1. Create two sprites: **Apple** and **Bowl**.
+2. Add the **Chomp** sound to the Apple sprite.
+3. Create a variable named `score`.
+4. Copy the scripts from the [Scratch Code](#-scratch-code) section.
+5. Press 🏁 and play.
+
+```bash
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/catch-an-apple.git
+
+# Navigate into the project
+cd catch-an-apple
+```
+
+---
+
+## 📺 Video Tutorial
+
+<div align="center">
+
+<a href="https://www.youtube.com/watch?v=7NN5v2wSL4U">
+  <img src="https://img.youtube.com/vi/7NN5v2wSL4U/maxresdefault.jpg" alt="Watch the Catch an Apple tutorial on YouTube" width="640">
+</a>
+
+<br/><br/>
+
+<a href="https://www.youtube.com/watch?v=7NN5v2wSL4U">
+  <img src="https://img.shields.io/badge/▶%20Watch%20the%20Full%20Tutorial-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch Tutorial">
+</a>
+
+</div>
+
+---
+
+## 📁 Repository Structure
+
+```text
+catch-an-apple/
+├── 📄 README.md             # You are here
+├── 🎮 Catch-an-Apple.sb3    # Scratch project file
+├── 🖼️ assets/
+│   ├── apple.svg            # Apple costume
+│   ├── bowl.svg             # Bowl costume
+│   └── chomp.wav            # Chomp sound effect
+└── 📜 LICENSE
+```
+
+---
+
+## 🛣️ Roadmap & Ideas
+
+- [ ] 💀 Add lives and a **Game Over** screen
+- [ ] 📈 Increase fall speed as the score rises
+- [ ] 🏅 Add a persistent **High Score**
+- [ ] 🍏 Add golden apples worth bonus points
+- [ ] 🐛 Add rotten apples that reduce the score
+- [ ] 🎵 Add background music
+
+---
+
+## 🤝 Contributing
+
+Contributions, ideas, and improvements are welcome.
+
+1. 🍴 **Fork** the repository
+2. 🌿 Create your branch: `git checkout -b feature/amazing-idea`
+3. 💾 Commit your changes: `git commit -m "Add amazing idea"`
+4. 📤 Push to the branch: `git push origin feature/amazing-idea`
+5. 🔃 Open a **Pull Request**
+
+---
+
+## 📜 License
+
+Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for details.
+
+---
+
+## 🙌 Acknowledgements
+
+- 🐱 [Scratch](https://scratch.mit.edu/) by the Scratch Foundation / MIT Media Lab
+- 📺 [Original YouTube Tutorial](https://www.youtube.com/watch?v=7NN5v2wSL4U)
+- 🎨 [Capsule Render](https://github.com/kyechan99/capsule-render), [Shields.io](https://shields.io/), and [Readme Typing SVG](https://github.com/DenverCoder1/readme-typing-svg)
+
+<div align="center">
+
+<br/>
+
+**If you enjoyed this project, give it a ⭐ and share it with a fellow Scratcher.**
+
+<br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&height=120&color=gradient&customColorList=12,20,24,30&section=footer">
+  <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&height=120&color=gradient&customColorList=0,2,5,12&section=footer">
+  <img alt="Footer wave" src="https://capsule-render.vercel.app/api?type=waving&height=120&color=gradient&customColorList=12,20,24,30&section=footer" width="100%">
+</picture>
+
+</div>
