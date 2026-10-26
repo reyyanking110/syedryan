@@ -1,38 +1,45 @@
 <div align="center">
 
-  <h1>🍎 Catch an Apple — Scratch 2D Game 🎮</h1>
+  <!-- Animated Header Banner -->
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF4B4B,100:FF8C00&height=220&section=header&text=🍎%20Catch%20An%20Apple&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38" width="100%" alt="Header Banner" />
 
+  <br/>
+
+  <!-- Animated Badges -->
   <p align="center">
-    <b>A fun and interactive Scratch game where players control a bowl to catch falling apples and score points!</b>
+    <a href="https://scratch.mit.edu/"><img src="https://img.shields.io/badge/Engine-Scratch_3.0-FFAB19?style=for-the-badge&logo=scratch&logoColor=white" alt="Scratch 3.0" /></a>
+    <a href="https://github.com/reyyanking110/syedryan"><img src="https://img.shields.io/badge/Type-2D_Arcade_Game-00C853?style=for-the-badge&logo=gamepad&logoColor=white" alt="Game Type" /></a>
+    <a href="https://github.com/reyyanking110/syedryan"><img src="https://img.shields.io/badge/Language-Block--Based-00B0FF?style=for-the-badge&logo=codefactor&logoColor=white" alt="Block Coding" /></a>
+    <a href="https://github.com/reyyanking110/syedryan/stargazers"><img src="https://img.shields.io/github/stars/reyyanking110/syedryan?style=for-the-badge&color=FFD700" alt="Stars" /></a>
   </p>
 
   <p align="center">
-    <img src="https://img.shields.io/badge/Platform-Scratch_3.0-orange?style=for-the-badge&logo=scratch&logoColor=white" alt="Scratch Badge"/>
-    <img src="https://img.shields.io/badge/Language-Block--Based-blue?style=for-the-badge" alt="Block Coding Badge"/>
-    <img src="https://img.shields.io/badge/Category-2D_Arcade-brightgreen?style=for-the-badge" alt="Genre Badge"/>
-    <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge" alt="Status Badge"/>
+    <b>An engaging, interactive 2D arcade game built in Scratch! Players control a bowl using real-time mouse movement to catch falling apples and score points.</b>
   </p>
 
 </div>
 
 ---
 
-## 🌟 Game Highlights
+## ⚡ Quick Overview
 
-* 🥣 **Smooth Mouse Tracking**: The bowl glides horizontally along the bottom following the mouse pointer.
-* 🍎 **Random Apple Spawning**: Apples fall continuously from random X-positions at the top of the screen.
-* 🔊 **Chomp Sound Effects**: Plays an audio effect (`Chomp`) instantly when an apple is caught.
-* 💯 **Score System**: Resets to `0` on launch and increases by `1` point for each successful catch.
+| Feature | Description |
+| :--- | :--- |
+| **🎮 Controls** | Real-time horizontal Mouse Tracking (`mouse x`)[cite: 1, 2] |
+| **🍎 Mechanics** | Random X-Spawning & Continuous Downward Y-Velocity (`-5`)[cite: 2] |
+| **🔊 Audio** | Instant collision sound effect (`Chomp`)[cite: 3, 4] |
+| **💯 Scoring System** | Auto-resets to `0` at start and increments by `+1` per catch[cite: 3, 4] |
 
 ---
 
-## 📜 Scratch Code Implementation
+## 🎮 Game Architecture & Code Blocks
 
-### 🥣 1. Bowl Movement
-Locks the Y-coordinate to `-150` while updating the X-coordinate continuously to match `mouse x`[cite: 1, 2].
+### 1️⃣ Bowl Controller Script
+Moves the bowl horizontally while keeping its vertical position fixed at the bottom of the screen[cite: 1, 2].
 
 ```scratch
 when green flag clicked
-go to x: 0 y: -150
+go to x: (0) y: (-150)
 forever
-  go to x: (mouse x) y: -150
+    go to x: (mouse x) y: (-150)
+end
